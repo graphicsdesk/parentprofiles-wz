@@ -219,3 +219,34 @@ $fade-transition-duration: 0.25s;
     display: block;
   }
 }
+
+.footer {
+  margin-bottom: 60px;
+  padding: 2rem; // match g-body's padding
+  display: flex;
+  justify-content: center;
+
+  .article-credits {
+    max-width: 600px;
+    width: 100%;
+
+    p {
+      font-family: $graphik;
+      color: white;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: left;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      width: 100px;
+      height: 1px;
+      background-color: #ccc;
+      margin-top: 29px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
