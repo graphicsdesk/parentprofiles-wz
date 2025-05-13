@@ -281,8 +281,8 @@ a:hover {
 }
 
 .footer {
-  text-align: left;        /* Left-align the text inside */
-  max-width: 700px;        /* Optional: control width for readability */
+  text-align: left;       
+  max-width: 700px;        
   width: 100%;
-  padding: 1rem;           /* Optional: add padding */
+  padding: 1rem;          
 }

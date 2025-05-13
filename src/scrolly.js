@@ -96,3 +96,39 @@ scroller
       document.body.style.backgroundColor = newColor;
     }
   });
+
+  ["jotera", "vien", "malky", "david"].forEach(name => {
+    const { url } = getResponsiveImage(name);
+    if (url) {
+      const img = new Image();
+      img.src = url;
+    }
+  });
+  
+  window.addEventListener("load", () => {
+    scroller.resize(); // Recalculate scroll positions
+  
+    const firstStep = document.querySelector(".step");
+    if (firstStep) {
+      const imgFrame = document.getElementById("sticky-img-frame");
+      const newImageKey = firstStep.getAttribute("data-image");
+      const newColor = firstStep.getAttribute("data-color");
+  
+      const { url: newImage, courtesy, photographer } = getResponsiveImage(newImageKey);
+  
+      if (newImage && imgFrame) {
+        imgFrame.style.backgroundImage = `url('${newImage}')`;
+      }
+  
+      const leftCredit = document.getElementById("photo-credit-left");
+      const rightCredit = document.getElementById("photo-credit-right");
+      if (leftCredit) leftCredit.textContent = photographer || "";
+      if (rightCredit) rightCredit.textContent = courtesy || "";
+  
+      if (window.innerWidth <= 500) {
+        firstStep.style.backgroundColor = newColor ? `${newColor}80` : "rgba(0, 0, 0, 0.5)";
+      }
+  
+      document.body.style.backgroundColor = newColor || "#264653";
+    }
+  });
