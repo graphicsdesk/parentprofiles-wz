@@ -108,23 +108,20 @@ scroller
 });
 
 window.addEventListener("load", () => {
-  if (!window.location.hash.includes('#refreshed')) {
-    window.location.replace(window.location.pathname + window.location.search + '#refreshed');
-    return;
-  }
-  // Wait a moment after load so layout stabilizes (fonts, images, etc.)
+  // Let layout fully settle after load
   setTimeout(() => {
-    // Recalculate Scrollama trigger positions
-    scroller.resize();
+    scroller.resize(); // Important for Scrollama to calculate triggers
 
-    // Wait one animation frame to be safe
     requestAnimationFrame(() => {
-      const firstVisible = document.querySelector(".step, .title-section, .intro-section, .concluding-section");
-      if (firstVisible) {
-        handleStepEnter(firstVisible);
-      }
+      // Ensure layout is painted
+      setTimeout(() => {
+        const firstVisible = document.querySelector(".step, .title-section, .intro-section, .concluding-section");
+        if (firstVisible) {
+          handleStepEnter(firstVisible); 
+        }
+      }, 0); // Run immediately after frame paint
     });
-  }, 250); // You can increase to 300–400ms if layout still isn't stable
+  }, 300); // Wait for fonts/images/CSS to stabilize
 });
 
 window.addEventListener("resize", () => {
