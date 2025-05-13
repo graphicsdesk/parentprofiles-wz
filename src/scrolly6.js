@@ -1,3 +1,5 @@
+import scrollama from 'scrollama';
+
 import joteraDesktop from './images/jotera_v2.jpg';
 import joteraMobile from './images/jotera-phone.jpg';
 
