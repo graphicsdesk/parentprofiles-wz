@@ -109,10 +109,9 @@ scroller
 
 window.addEventListener("load", () => {
   if (!window.location.hash.includes('#refreshed')) {
-    window.location.hash = '#refreshed';
-    window.location.href = window.location.href; // force refresh once
+    window.location.replace(window.location.pathname + window.location.search + '#refreshed');
+    return;
   }
-  
   // Wait a moment after load so layout stabilizes (fonts, images, etc.)
   setTimeout(() => {
     // Recalculate Scrollama trigger positions
