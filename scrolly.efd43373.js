@@ -1,20 +1,20 @@
 parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcelRequire,u="function"==typeof require&&require;function f(t,n){if(!r[t]){if(!e[t]){var i="function"==typeof parcelRequire&&parcelRequire;if(!n&&i)return i(t,!0);if(o)return o(t,!0);if(u&&"string"==typeof t)return u(t);var c=new Error("Cannot find module '"+t+"'");throw c.code="MODULE_NOT_FOUND",c}p.resolve=function(r){return e[t][1][r]||r},p.cache={};var l=r[t]=new f.Module(t);e[t][0].call(l.exports,p,l,l.exports,this)}return r[t].exports;function p(e){return f(p.resolve(e))}}f.isParcelRequire=!0,f.Module=function(e){this.id=e,this.bundle=f,this.exports={}},f.modules=e,f.cache=r,f.parent=o,f.register=function(r,t){e[r]=[function(e,r){r.exports=t},{}]};for(var c=0;c<t.length;c++)try{f(t[c])}catch(e){i||(i=e)}if(t.length){var l=f(t[t.length-1]);"object"==typeof exports&&"undefined"!=typeof module?module.exports=l:"function"==typeof define&&define.amd?define(function(){return l}):n&&(this[n]=l)}if(parcelRequire=f,i)throw i;return f}({"yLqg":[function(require,module,exports) {
-module.exports="jotera_v2.d2b9f9a3.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/jotera_v2.d2b9f9a3.jpg";
 },{}],"Avlm":[function(require,module,exports) {
-module.exports="jotera-phone.c16a4c8b.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/jotera-phone.c16a4c8b.jpg";
 },{}],"cw8f":[function(require,module,exports) {
-module.exports="vien_v2.53aca81a.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/vien_v2.53aca81a.jpg";
 },{}],"W1bk":[function(require,module,exports) {
-module.exports="vien-phone.c7f36929.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/vien-phone.c7f36929.jpg";
 },{}],"hpp/":[function(require,module,exports) {
-module.exports="malky_v2.de71c9ac.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/malky_v2.de71c9ac.jpg";
 },{}],"hFz6":[function(require,module,exports) {
-module.exports="malky-phone.b0c7143d.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/malky-phone.b0c7143d.jpg";
 },{}],"yPVM":[function(require,module,exports) {
-module.exports="david_v2.6646e6ce.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/david_v2.6646e6ce.jpg";
 },{}],"0lPm":[function(require,module,exports) {
-module.exports="david-phone.e964da0f.jpg";
+module.exports="https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/david-phone.e964da0f.jpg";
 },{}],"ymsB":[function(require,module,exports) {
 "use strict";var e=l(require("./images/jotera_v2.jpg")),t=l(require("./images/jotera-phone.jpg")),o=l(require("./images/vien_v2.jpg")),r=l(require("./images/vien-phone.jpg")),n=l(require("./images/malky_v2.jpg")),a=l(require("./images/malky-phone.jpg")),s=l(require("./images/david_v2.jpg")),i=l(require("./images/david-phone.jpg"));function l(e){return e&&e.__esModule?e:{default:e}}function u(l){var u=window.innerWidth<=500?"mobile":"desktop",c={jotera:{desktop:e.default,mobile:t.default,courtesy:"Courtesy of Jotera Webster",photographer:null},vien:{desktop:o.default,mobile:r.default,courtesy:"Courtesy of Vien Nguyen",photographer:"Photo by Morgan Desfosses"},malky:{desktop:n.default,mobile:a.default,courtesy:"Courtesy of Malky Schwartz",photographer:null},david:{desktop:s.default,mobile:i.default,courtesy:"Courtesy of David Benson",photographer:"Photo by Morgan Desfosses"}}[l];return{url:c&&c[u],courtesy:c&&c.courtesy,photographer:c&&c.photographer}}var c=scrollama();c.setup({step:".step, .title-section, .intro-section, .concluding-section",offset:.5}).onStepEnter(function(e){var t=document.getElementById("sticky-img-frame"),o=e.element.getAttribute("data-image"),r=e.element.getAttribute("data-color"),n=u(o),a=n.url,s=n.courtesy,i=n.photographer;a&&t&&(t.style.backgroundImage="url('".concat(a,"')"));var l=document.getElementById("photo-credit-left"),c=document.getElementById("photo-credit-right");l&&(l.textContent=i||""),c&&(c.textContent=s||""),window.innerWidth<=500&&e.element.classList.contains("step")&&(document.querySelectorAll(".step").forEach(function(e){e.style.backgroundColor="transparent"}),e.element.style.backgroundColor=r?"".concat(r,"80"):"rgba(0, 0, 0, 0.5)"),e.element.classList.contains("title-section")||e.element.classList.contains("intro-section")||e.element.classList.contains("concluding-section")?(document.getElementById("fade-overlay").style.opacity=.4,setTimeout(function(){document.body.style.backgroundColor=r||"#264653",document.getElementById("fade-overlay").style.opacity=0},200)):r&&(document.body.style.backgroundColor=r)});
 },{"./images/jotera_v2.jpg":"yLqg","./images/jotera-phone.jpg":"Avlm","./images/vien_v2.jpg":"cw8f","./images/vien-phone.jpg":"W1bk","./images/malky_v2.jpg":"hpp/","./images/malky-phone.jpg":"hFz6","./images/david_v2.jpg":"yPVM","./images/david-phone.jpg":"0lPm"}]},{},["ymsB"], "script")
-//# sourceMappingURL=scrolly.efd43373.js.map
+//# sourceMappingURL=https://spectator-static-assets.s3.amazonaws.com/parentprofiles-wz/scrolly.efd43373.js.map
