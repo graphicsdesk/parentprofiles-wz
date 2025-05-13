@@ -264,6 +264,7 @@ a:hover {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: white;
   padding-left: 5px;
+  background: #264653;
 }
 
 @media (max-width: 500px) {
@@ -272,4 +273,16 @@ a:hover {
     background: #264653;
     text-align: left;
   }
+}
+
+.clear-sticky {
+  display: flex;
+  justify-content: center; /* Center the inner content horizontally */
+}
+
+.footer {
+  text-align: left;        /* Left-align the text inside */
+  max-width: 700px;        /* Optional: control width for readability */
+  width: 100%;
+  padding: 1rem;           /* Optional: add padding */
 }
